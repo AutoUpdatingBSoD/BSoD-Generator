@@ -7,51 +7,52 @@
   File Name: Portfolio.html;
 -->
 <style>
-body
+.bsod
 {
     background-color: #1780BE;
     color: #FFFFFF;
     font-family: Segoe UI, Selawik;
+    height: 1000px;
 }
 .face
 {
     position: absolute;
     font-size:400%;
-    top: 20%;
-    left: 20%;
+    top: 200px;
+    left: 200px;
     font: Segoe UI;
 }
-.message
+.messagee
 {
     position: absolute;
     font-size:200%;
-    top: 35%;
-    left: 20%;
-    right: 10%;
+    top: 350px;
+    left: 200px;
+    right: 100px;
 }
 .link
 {
     position: absolute;
     font-size:100%;
-    left: 40%;   
-    right: 20%;
-    top: 60%;
+    left: 400px;   
+    right: 200px;
+    top: 600px;
 }
 .support
 {
     position: absolute;
     font-size:100%;
-    left: 40%;
-    top: 70%;
-    right: 20%;
+    left: 400px;
+    top: 700px;
+    right: 200px;
 }
 .qr
 {
     position: absolute;
-    top: 60%;
-    left: 25%;
-    width:15%;
-    height:30%;
+    top: 600px;
+    left: 250px;
+    width:150px;
+    height:300px;
 }
 .watermark
 {
@@ -60,16 +61,27 @@ body
     top: 90%;
     font-size: 50%;
 }
+body {
+  overflow: scroll; /* Show scrollbars */
+}
+
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<p id = "test" ></p>
-<body>
-    <div class="face" contenteditable="true">:(</div>
-    <div class="message" contenteditable="true">Your PC ran into a problem and needs to restart. We're just
-collecting some error info, and then we'll restart for you.</div>
-<div class="link" contenteditable="true">For more information about this issue and possible fixes, visit http://windows.com/stopcode</div>
-    <div class="support" contenteditable="true">If you'd like to know more, you can search online later for this error: HAL_INITIALIZATION_FAILED</div>
-    <img src="QR.PNG" class="qr" ></div>
-    <div class="watermark">~Apache Commons Licensed Work by AutoUpdatingBSoD</img>
-</body>
+<body class="bsod">
+    <div class="hero-body" id="bsod">
+        
+        <div class="container">
+        </div> 
+        <div class="face" contenteditable="true">:(</div>
+        <div class="messagee" contenteditable="true">Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</div>
+        <div class="link" contenteditable="true">For more information about this issue and possible fixes, visit http://windows.com/stopcode</div>
+        <div class="support" contenteditable="true">If you'd like to know more, you can search online later for this error: HAL_INITIALIZATION_FAILED</div>
+        <img src="QR.PNG" class="qr" ></img>
+        <div class="watermark">~Apache Commons Licensed Work by AutoUpdatingBSoD</div> 
+    </div>
+    </body>
 </html> 
+<script>
+</script>
