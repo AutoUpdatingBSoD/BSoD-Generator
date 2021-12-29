@@ -12,76 +12,100 @@
     background-color: #1780BE;
     color: #FFFFFF;
     font-family: Segoe UI, Selawik;
-    height: 1000px;
+    height: 1080px;
+    width: 1920px;
 }
 .face
 {
-    position: absolute;
+    position: relative;
     font-size:400%;
     top: 200px;
-    left: 200px;
+    left: 140px;
     font: Segoe UI;
 }
 .messagee
 {
-    position: absolute;
+    position: relative;
     font-size:200%;
-    top: 350px;
-    left: 200px;
+    top: 250px;
+    left: 140px;
     right: 100px;
 }
 .link
 {
-    position: absolute;
+    position: relative;
     font-size:100%;
-    left: 400px;   
-    right: 200px;
-    top: 600px;
+    left: 600px;   
+    right: 140px;
+    top: 500px;
 }
 .support
 {
-    position: absolute;
+    position: relative;
     font-size:100%;
-    left: 400px;
-    top: 700px;
-    right: 200px;
+    left: 600px;
+    top: 300px;
+    right: 140px;
 }
 .qr
 {
-    position: absolute;
-    top: 600px;
-    left: 250px;
-    width:150px;
-    height:300px;
+    position: relative;
+    top: 225px;
+    left: 190px;
+    width: 300px;
+    height: 300px;
 }
 .watermark
 {
-    position: absolute;
+    position: relative;
     left: 70%;
     top: 90%;
     font-size: 50%;
 }
-body {
-  overflow: scroll; /* Show scrollbars */
+.savebsod
+{
+    height: 400px;
+    background-color: #1780BE;
+    color: #FFFFFF;
+    font-family: Segoe UI, Selawik;
 }
-
+.hiddenbsod{
+    display: none;
+}
+body{
+    background-color: #1780BE; 
+}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.21.15/plugins/export/libs/FileSaver.js/FileSaver.min.js"></script>
+
 </head>
-<body class="bsod">
-    <div class="hero-body" id="bsod">
-        
-        <div class="container">
-        </div> 
-        <div class="face" contenteditable="true">:(</div>
-        <div class="messagee" contenteditable="true">Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</div>
-        <div class="link" contenteditable="true">For more information about this issue and possible fixes, visit http://windows.com/stopcode</div>
-        <div class="support" contenteditable="true">If you'd like to know more, you can search online later for this error: HAL_INITIALIZATION_FAILED</div>
+
+<body>
+    <div id="bsod" class="bsod">
+        <p class="face" contenteditable="true">:(</p>
+        <p class="messagee" contenteditable="true">Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.</p>
+        <p class="link" contenteditable="true">For more information about this issue and possible fixes, visit http://windows.com/stopcode</p>
+        <p class="support" contenteditable="true">If you'd like to know more, you can search online later for this error: HAL_INITIALIZATION_FAILED</p>
         <img src="QR.PNG" class="qr" ></img>
-        <div class="watermark">~Apache Commons Licensed Work by AutoUpdatingBSoD</div> 
+        <p class="watermark">~Apache Commons Licensed Work by AutoUpdatingBSoD</p>         
     </div>
-    </body>
+    <div class="savebsod">
+        <div class="hiddenbsod" id="hiddenbsod"></div>
+        <button id="btnSave" class="button is-link">Save Me!</button>
+    </div>
+</body>
 </html> 
 <script>
+$("#btnSave").click(function() { 
+        html2canvas($("#bsod")[0]).then((canvas) => {
+
+                canvas.toBlob(function(blob) {
+                    saveAs(blob, "BSOD.png"); 
+                });
+            });
+        });
 </script>
+
