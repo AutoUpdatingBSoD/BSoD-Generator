@@ -2,6 +2,7 @@
 A Simple BSoD Meme Generator I made quickly for image saving purposes
 
 Just edit the text to your liking and make any BSoD meme you can imagine!
+
 ---
 Side notes:
 ---
