@@ -11,3 +11,5 @@ Side notes:
 - Segoe UI will almost always be installed on a Windows 8.1 or higher Windows-based machine.
 
 - You're on your own if you want Segoe UI on machines which don't have it, as it's a proprietary Windows font. Selawik is an open font, so it should be on your machine.
+
+<a href="https://autoupdatingbsod.github.io/BSoD-Generator/">Link to the page.</a>
