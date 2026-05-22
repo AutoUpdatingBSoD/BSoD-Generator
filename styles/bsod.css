@@ -1,0 +1,82 @@
+  html{
+      background-color: #1780BE;
+
+}
+.bsod
+{
+    background-color: #1780BE;
+    color: #FFFFFF;
+    font-family: Segoe UI, Selawik;
+    height: 1080px;
+    width: 1920px;
+}
+.face
+{
+    position: relative;
+    font-size:400%;
+    top: 200px;
+    left: 140px;
+    font: Segoe UI;
+}
+.messagee
+{
+    position: relative;
+    font-size:200%;
+    top: 250px;
+    left: 140px;
+    right: 100px;
+}
+.link
+{
+    position: relative;
+    width: 800px;
+    font-size:150%;
+    left: 600px;   
+    right: 140px;
+    top: 475px;
+}
+.support
+{
+    position: relative;
+    font-size:150%;
+    width: 800px;
+    left: 600px;
+    top: 300px;
+    right: 140px;
+}
+.qr
+{
+    position: relative;
+    top: 175px;
+    left: 190px;
+    width: 300px;
+    height: 300px;
+}
+.watermark
+{
+    position: relative;
+    left: 70%;
+    top: 5%;
+    font-size: 50%;
+}
+.savebsod
+{
+    height: 400px;
+    background-color: #1780BE;
+    color: #FFFFFF;
+    font-family: Segoe UI, Selawik;
+}
+.centered
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.hiddenbsod{
+    display: none;
+}
+body, head{
+    position: relative;
+    background-color: #1780BE;
+        height: 3840px;
+      width: 7777px;
+}
